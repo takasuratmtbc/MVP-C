@@ -46,7 +46,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="140"/>
+            <point key="canvasLocation" x="-978" y="116"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="4et-3k-yLM">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="hnk-iH-20C" customClass="DashboardViewController" customModule="CoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nhQ-4G-iTM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY8-bM-n41">
+                                <rect key="frame" x="165" y="437.5" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eMC-dj-ncK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mY8-bM-n41" firstAttribute="centerX" secondItem="nhQ-4G-iTM" secondAttribute="centerX" id="Aip-ux-0Ig"/>
+                            <constraint firstItem="mY8-bM-n41" firstAttribute="centerY" secondItem="nhQ-4G-iTM" secondAttribute="centerY" id="hkI-w9-OVA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vwu-Du-gqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="116"/>
         </scene>
     </scenes>
     <resources>

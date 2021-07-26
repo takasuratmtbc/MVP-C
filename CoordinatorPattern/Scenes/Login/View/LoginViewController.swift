@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginPresenter = LoginPresenter(presenter: self)
+        loginPresenter = LoginPresenter(presenter: self, navigationController: self.navigationController)
     }
 
     @IBAction func loginButtonWasTapped(_ sender: Any) {
@@ -31,7 +31,7 @@ class LoginViewController: UIViewController, Storyboarded {
 extension LoginViewController: LoginViewControllerDelegate {
     
     func didLoginSuccessfully() {
-        
+        loginPresenter.moveToDashboard()
     }
     
 }

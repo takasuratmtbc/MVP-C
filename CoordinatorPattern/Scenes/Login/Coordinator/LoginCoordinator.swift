@@ -9,7 +9,7 @@ import UIKit
 
 class LoginCoordinator: Coordinator {
     
-    private let navigationController: UINavigationController!
+    var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -19,6 +19,7 @@ class LoginCoordinator: Coordinator {
         let loginVC = LoginViewController.instantiate(sbName: .main)
         navigationController.pushViewController(loginVC, animated: true)
     }
+    
     
 }
 

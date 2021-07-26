@@ -17,6 +17,11 @@
 		F9C8249F26AED60A003DC86B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C8249E26AED60A003DC86B /* Coordinator.swift */; };
 		F9C824A426AED799003DC86B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824A326AED799003DC86B /* LoginPresenter.swift */; };
 		F9C824A726AED962003DC86B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824A626AED962003DC86B /* LoginCoordinator.swift */; };
+		F9C824AE26AEDB73003DC86B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824AD26AEDB73003DC86B /* DashboardViewController.swift */; };
+		F9C824B026AEDB83003DC86B /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824AF26AEDB83003DC86B /* DashboardPresenter.swift */; };
+		F9C824B226AEDB8D003DC86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B126AEDB8D003DC86B /* DashboardCoordinator.swift */; };
+		F9C824B526AEDD46003DC86B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B426AEDD46003DC86B /* Storyboarded.swift */; };
+		F9C824B826AEDD7A003DC86B /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B726AEDD7A003DC86B /* StoryboardNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		F9C8249E26AED60A003DC86B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F9C824A326AED799003DC86B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F9C824A626AED962003DC86B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		F9C824AD26AEDB73003DC86B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F9C824AF26AEDB83003DC86B /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		F9C824B126AEDB8D003DC86B /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		F9C824B426AEDD46003DC86B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F9C824B726AEDD7A003DC86B /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,8 @@
 		F9C8248326AED069003DC86B /* CoordinatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F9C824B626AEDD63003DC86B /* Global Enums */,
+				F9C824B326AEDD3C003DC86B /* Global Protocols */,
 				F9C8249B26AED4A9003DC86B /* App Delegate */,
 				F9C8249A26AED4A4003DC86B /* Coodrinator */,
 				F9C8249826AED495003DC86B /* Scenes */,
@@ -78,6 +90,7 @@
 		F9C8249826AED495003DC86B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F9C824A826AEDB2B003DC86B /* Dashboard */,
 				F9C8249926AED49D003DC86B /* Login */,
 			);
 			path = Scenes;
@@ -141,6 +154,64 @@
 				F9C824A626AED962003DC86B /* LoginCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F9C824A826AEDB2B003DC86B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824A926AEDB31003DC86B /* Model */,
+				F9C824AA26AEDB36003DC86B /* View */,
+				F9C824AB26AEDB3C003DC86B /* Presenter */,
+				F9C824AC26AEDB43003DC86B /* Coordinator */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F9C824A926AEDB31003DC86B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9C824AA26AEDB36003DC86B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824AD26AEDB73003DC86B /* DashboardViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9C824AB26AEDB3C003DC86B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824AF26AEDB83003DC86B /* DashboardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F9C824AC26AEDB43003DC86B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824B126AEDB8D003DC86B /* DashboardCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F9C824B326AEDD3C003DC86B /* Global Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824B426AEDD46003DC86B /* Storyboarded.swift */,
+			);
+			path = "Global Protocols";
+			sourceTree = "<group>";
+		};
+		F9C824B626AEDD63003DC86B /* Global Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824B726AEDD7A003DC86B /* StoryboardNames.swift */,
+			);
+			path = "Global Enums";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,12 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C824A426AED799003DC86B /* LoginPresenter.swift in Sources */,
+				F9C824B226AEDB8D003DC86B /* DashboardCoordinator.swift in Sources */,
 				F9C8248926AED069003DC86B /* LoginViewController.swift in Sources */,
 				F9C824A726AED962003DC86B /* LoginCoordinator.swift in Sources */,
 				F9C8248526AED069003DC86B /* AppDelegate.swift in Sources */,
 				F9C8249F26AED60A003DC86B /* Coordinator.swift in Sources */,
+				F9C824B026AEDB83003DC86B /* DashboardPresenter.swift in Sources */,
+				F9C824B526AEDD46003DC86B /* Storyboarded.swift in Sources */,
 				F9C8248726AED069003DC86B /* SceneDelegate.swift in Sources */,
+				F9C824B826AEDD7A003DC86B /* StoryboardNames.swift in Sources */,
 				F9C8249D26AED5FE003DC86B /* ApplicationCoordinator.swift in Sources */,
+				F9C824AE26AEDB73003DC86B /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
