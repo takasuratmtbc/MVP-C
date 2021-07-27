@@ -19,6 +19,7 @@ class LoginPresenter {
     
     func login() {
         delegate?.didLoginSuccessfully()
+        logger.critical("Testing")
     }
     
     func moveToDashboard() {

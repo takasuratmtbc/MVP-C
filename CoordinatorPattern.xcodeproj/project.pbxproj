@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		F9C824B226AEDB8D003DC86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B126AEDB8D003DC86B /* DashboardCoordinator.swift */; };
 		F9C824B526AEDD46003DC86B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B426AEDD46003DC86B /* Storyboarded.swift */; };
 		F9C824B826AEDD7A003DC86B /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824B726AEDD7A003DC86B /* StoryboardNames.swift */; };
+		F9C824BB26AEF6DA003DC86B /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = F9C824BA26AEF6DA003DC86B /* Logging */; };
+		F9C824BE26AEF710003DC86B /* SwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C824BD26AEF710003DC86B /* SwiftLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,7 @@
 		F9C824B126AEDB8D003DC86B /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 		F9C824B426AEDD46003DC86B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		F9C824B726AEDD7A003DC86B /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
+		F9C824BD26AEF710003DC86B /* SwiftLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C824BB26AEF6DA003DC86B /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 		F9C8248326AED069003DC86B /* CoordinatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F9C824BC26AEF700003DC86B /* Global Vars */,
 				F9C824B626AEDD63003DC86B /* Global Enums */,
 				F9C824B326AEDD3C003DC86B /* Global Protocols */,
 				F9C8249B26AED4A9003DC86B /* App Delegate */,
@@ -214,6 +219,14 @@
 			path = "Global Enums";
 			sourceTree = "<group>";
 		};
+		F9C824BC26AEF700003DC86B /* Global Vars */ = {
+			isa = PBXGroup;
+			children = (
+				F9C824BD26AEF710003DC86B /* SwiftLog.swift */,
+			);
+			path = "Global Vars";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +243,9 @@
 			dependencies = (
 			);
 			name = CoordinatorPattern;
+			packageProductDependencies = (
+				F9C824BA26AEF6DA003DC86B /* Logging */,
+			);
 			productName = CoordinatorPattern;
 			productReference = F9C8248126AED069003DC86B /* CoordinatorPattern.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +273,9 @@
 				Base,
 			);
 			mainGroup = F9C8247826AED069003DC86B;
+			packageReferences = (
+				F9C824B926AEF6DA003DC86B /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = F9C8248226AED069003DC86B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +310,7 @@
 				F9C8248526AED069003DC86B /* AppDelegate.swift in Sources */,
 				F9C8249F26AED60A003DC86B /* Coordinator.swift in Sources */,
 				F9C824B026AEDB83003DC86B /* DashboardPresenter.swift in Sources */,
+				F9C824BE26AEF710003DC86B /* SwiftLog.swift in Sources */,
 				F9C824B526AEDD46003DC86B /* Storyboarded.swift in Sources */,
 				F9C8248726AED069003DC86B /* SceneDelegate.swift in Sources */,
 				F9C824B826AEDD7A003DC86B /* StoryboardNames.swift in Sources */,
@@ -495,6 +515,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9C824B926AEF6DA003DC86B /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9C824BA26AEF6DA003DC86B /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9C824B926AEF6DA003DC86B /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9C8247926AED069003DC86B /* Project object */;
 }
